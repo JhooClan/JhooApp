@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="JhooApp.JhooApp">
+  <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="18" />
+  <application android:label="JhooApp" android:icon="@drawable/icon" android:name="mono.android.app.Application">
+    <activity android:icon="@drawable/icon" android:label="JhooApp" android:name="jhooapp.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="EquipmentActivity" android:name="jhooapp.EquipmentActivity" />
+    <activity android:label="QuestsActivity" android:name="jhooapp.QuestsActivity" />
+    <activity android:label="MonstersActivity" android:name="jhooapp.MonstersActivity" />
+    <activity android:label="ItemsActivity" android:name="jhooapp.ItemsActivity" />
+    <activity android:label="LocationsActivity" android:name="jhooapp.LocationsActivity" />
+    <activity android:label="SkillsActivity" android:name="jhooapp.SkillsActivity" />
+    <activity android:label="UtilsActivity" android:name="jhooapp.UtilsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="JhooApp.JhooApp.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

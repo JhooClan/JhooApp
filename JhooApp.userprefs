@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="JhooApp\JhooApp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.MonoForAndroid_API_10" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="JhooApp\MainActivity.cs">
+    <Files>
+      <File FileName="JhooApp\MainActivity.cs" Line="17" Column="19" />
+      <File FileName="JhooApp\Resources\values\Strings.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.JhooApp AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

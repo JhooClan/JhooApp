@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainLayout"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="bottom"
+    android:background="@drawable/backgr">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:id="@+id/buttonMonsters"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/monsters" />
+        <Button
+            android:id="@+id/buttonQuests"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/quests" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:id="@+id/buttonItems"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/items" />
+        <Button
+            android:id="@+id/buttonLocations"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/locations" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:id="@+id/linearLayout3">
+        <Button
+            android:id="@+id/buttonEquipment"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/equipment" />
+        <Button
+            android:id="@+id/buttonSkills"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/skills" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:id="@+id/linearLayout4">
+        <Button
+            android:id="@+id/buttonUtils"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/utils" />
+    </LinearLayout>
+</RelativeLayout>
