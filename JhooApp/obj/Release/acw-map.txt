@@ -1,8 +1,0 @@
-JhooApp.MainActivity;jhooapp.MainActivity
-JhooApp.EquipmentActivity;jhooapp.EquipmentActivity
-JhooApp.QuestsActivity;jhooapp.QuestsActivity
-JhooApp.MonstersActivity;jhooapp.MonstersActivity
-JhooApp.ItemsActivity;jhooapp.ItemsActivity
-JhooApp.LocationsActivity;jhooapp.LocationsActivity
-JhooApp.SkillsActivity;jhooapp.SkillsActivity
-JhooApp.UtilsActivity;jhooapp.UtilsActivity
