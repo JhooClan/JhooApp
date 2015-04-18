@@ -8,15 +8,21 @@
 	<string name="equipment">Equipamiento</string>
 	<string name="skills">Habilidades</string>
 	<string name="utils">Utilidades</string>
-	<string name="dmgcalc">Calculo</string>
+	<string name="dmgcalc">Cálculo de daño</string>
 	<string-array name="weapons_array">
-        <item>Gran Espada</item>
-        <item>Espada Larga</item>
-        <item>Doble Espada</item>
-        <item>Espada y Escudo</item>
-        <item>Hacha Espada</item>
-        <item>Hacha Cargada</item>
-        <item>Glaive Kinsecto</item>
+        <item>Gran espada</item>
+        <item>Espada larga</item>
+        <item>Espada y escudo</item>
+        <item>Espadas dobles</item>
         <item>Martillo</item>
+        <item>Cornamusa</item>
+        <item>Lanza</item>
+        <item>Lanza pistola</item>
+        <item>Hacha espada</item>
+        <item>Hacha cargada</item>
+        <item>Glaive insecto</item>
+        <item>Ballesta ligera</item>
+        <item>Ballesta pesada</item>
+        <item>Arco</item>
     </string-array>
 </resources>
