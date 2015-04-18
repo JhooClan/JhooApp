@@ -24,20 +24,11 @@ namespace JhooApp
 
 			Spinner sWeapType = FindViewById<Spinner> (Resource.Id.wType);
 
-			sWeapType.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (sWeapType_ItemSelected);
 			var adapter = ArrayAdapter.CreateFromResource (
 				this, Resource.Array.weapons_array, Android.Resource.Layout.SimpleSpinnerItem);
 
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
 			sWeapType.Adapter = adapter;
-		}
-
-		private void sWeapType_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
-		{
-			Spinner spinner = (Spinner)sender;
-
-			string toast = string.Format ("The planet is {0}", spinner.GetItemAtPosition (e.Position));
-			Toast.MakeText (this, toast, ToastLength.Long).Show ();
 		}
 	}
 }
