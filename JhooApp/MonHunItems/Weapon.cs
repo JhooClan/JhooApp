@@ -4,12 +4,14 @@ namespace JhooApp
 {
 	public class Weapon : EquipmentItem
 	{
-		private int baseatk;
-		private int affinity;
-		private bool sergio;
-		private int upgradedFromID;
-		private CraftObject createFromUpgrade;
-		private int upgradedToID;
+		protected int baseatk;
+		protected int affinity;
+		protected float mult;
+		protected bool sergio;
+		protected int upgradedFromID;
+		protected CraftObject createFromUpgrade;
+		protected int upgradedToID;
+
 		public Weapon (bool tmp, int baseatk, int affinity) : base (tmp)
 		{
 			setBaseatk (baseatk);
@@ -31,10 +33,10 @@ namespace JhooApp
 
 		public void setAffinity (int affinity)
 		{
-			if (-100<=affinity<=100)
+			if (-100 <= affinity && affinity <= 100)
 				this.affinity = affinity;
 			else
-				throw new ArgumentException("Parameter must be between -100 and 100", "affinity");
+				throw new ArgumentException ("Parameter must be between -100 and 100", "affinity");
 		}
 
 		public int getAffinity ()
@@ -50,6 +52,11 @@ namespace JhooApp
 		public bool getSergio ()
 		{
 			return sergio;
+		}
+
+		public float getMult ()
+		{
+			return mult;
 		}
 	}
 }

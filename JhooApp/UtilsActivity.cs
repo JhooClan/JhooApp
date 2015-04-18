@@ -21,6 +21,13 @@ namespace JhooApp
 			base.OnCreate (savedInstanceState);
 
 			SetContentView (Resource.Layout.Utils);
+
+			Button bCalc = FindViewById<Button> (Resource.Id.buttonCalc);
+
+			bCalc.Click += delegate {
+				var intent = new Intent(this, typeof(DmcCalcActivity));
+				StartActivity(intent);
+			};
 		}
 	}
 }

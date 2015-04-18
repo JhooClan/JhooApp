@@ -30,7 +30,7 @@ namespace JhooApp
 
 		public void setSlots (int slots)
 		{
-			if (0 <= slots <= 3)
+			if (0 <= slots && slots <= 3)
 				this.slots = slots;
 			else
 				throw new ArgumentException ("Parameter must be between 0 and 3", "slots");
@@ -78,12 +78,12 @@ namespace JhooApp
 
 		public int getCreateItemID (int index)
 		{
-			return createFromZero.getItemID ();
+			return createFromZero.getItemID (index);
 		}
 
 		public int getCreateItemQt (int index)
 		{
-			return createFromZero.getItemQt ();
+			return createFromZero.getItemQt (index);
 		}
 	}
 }

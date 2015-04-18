@@ -2,18 +2,18 @@
 
 namespace JhooApp
 {
-	public class GreatSword : MeleeWeapon
+	public class LongSword : MeleeWeapon
 	{
 		protected readonly string[] wType;
 		protected int chaos;
 
-		public GreatSword (bool tmp, int baseatk, int elematk, Sharpness sharp, int affinity, int chaos) : base (tmp, baseatk, elematk, sharp, affinity)
+		public LongSword (bool tmp, int baseatk, int elematk, Sharpness sharp, int affinity, int chaos) : base (tmp, baseatk, elematk, sharp, affinity)
 		{
 			wType = new string[2];
-			wType [0] = "Gran Espada";
-			wType [1] = "Great Sword";
+			wType [0] = "Espada Larga";
+			wType [1] = "Long Sword";
 			this.chaos = chaos;
-			mult = 4.8f;
+			mult = 3.3f;
 		}
 
 		public void setChaos(int chaos)
@@ -29,7 +29,7 @@ namespace JhooApp
 			return chaos;
 		}
 
-		public int motionValue(GreatSwordMotionValues mvalue)
+		public int motionValue(LongSwordMotionValues mvalue)
 		{
 			return (int)mvalue;
 		}
@@ -37,7 +37,7 @@ namespace JhooApp
 		public int maxMotionValue()
 		{
 			int max = 0;
-			foreach (var motion in Enum.GetValues(typeof(GreatSwordMotionValues))){
+			foreach (var motion in Enum.GetValues(typeof(LongSwordMotionValues))){
 				if (max < (int)motion)
 					max = (int)motion;
 			}
@@ -47,7 +47,7 @@ namespace JhooApp
 		public int minMotionValue()
 		{
 			int min=maxMotionValue();
-			foreach (var motion in Enum.GetValues(typeof(GreatSwordMotionValues))){
+			foreach (var motion in Enum.GetValues(typeof(LongSwordMotionValues))){
 				if (min > (int)motion)
 					min = (int)motion;
 			}

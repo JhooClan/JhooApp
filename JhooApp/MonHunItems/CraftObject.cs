@@ -41,7 +41,7 @@ namespace JhooApp
 
 		public void addItem(int itemID, int itemQt)
 		{
-			if (0 <= index < 4) {
+			if (0 <= index && index < 4) {
 				itemIDs [index] = itemID;
 				itemQts [index] = itemQt;
 				index++;
@@ -50,7 +50,7 @@ namespace JhooApp
 
 		public void remItem(int itemID)
 		{
-			int aux, i=0;
+			int aux=0, i=0;
 			bool found = false;
 			while (!found && i < index) {
 				if (itemID == itemIDs [i]){
@@ -73,7 +73,7 @@ namespace JhooApp
 		public void changeItemQt (int itemID, int itemQt)
 		{
 			if (itemQt > 0) {
-				int aux, i = 0;
+				int i = 0;
 				bool found = false;
 				while (!found && i < index) {
 					if (itemID == itemIDs [i]) {

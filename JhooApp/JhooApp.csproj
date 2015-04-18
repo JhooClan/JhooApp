@@ -65,6 +65,10 @@
     <Compile Include="MonHunItems\Weapon.cs" />
     <Compile Include="MonHunItems\WeapType.cs" />
     <Compile Include="MonHunItems\Weapon\GreatSword.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\GreatSwordMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\LongSwordMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\LongSword.cs" />
+    <Compile Include="DmcCalcActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -88,11 +92,13 @@
     <AndroidResource Include="Resources\layout\Items.axml" />
     <AndroidResource Include="Resources\layout\Locations.axml" />
     <AndroidResource Include="Resources\layout\Skills.axml" />
+    <AndroidResource Include="Resources\layout\DmgCalc.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\drawable-ldpi\" />
     <Folder Include="MonHunItems\" />
     <Folder Include="MonHunItems\Weapon\" />
+    <Folder Include="MonHunItems\Weapon\MotionValues\" />
   </ItemGroup>
 </Project>

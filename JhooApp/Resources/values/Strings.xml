@@ -8,4 +8,15 @@
 	<string name="equipment">Equipamiento</string>
 	<string name="skills">Habilidades</string>
 	<string name="utils">Utilidades</string>
+	<string name="dmgcalc">Calculo</string>
+	<string-array name="weapons_array">
+        <item>Gran Espada</item>
+        <item>Espada Larga</item>
+        <item>Doble Espada</item>
+        <item>Espada y Escudo</item>
+        <item>Hacha Espada</item>
+        <item>Hacha Cargada</item>
+        <item>Glaive Kinsecto</item>
+        <item>Martillo</item>
+    </string-array>
 </resources>

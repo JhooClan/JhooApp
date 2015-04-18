@@ -5,11 +5,11 @@ namespace JhooApp
 	public class MeleeWeapon : Weapon
 	{
 
-		private bool elmIsHidden;
-		private Elem element;
-		private int elematk;
-		private Sharpness sharp;
-		private Sharpness sharpExtra;
+		protected bool elmIsHidden;
+		protected Elem element;
+		protected int elematk;
+		protected Sharpness sharp;
+		protected Sharpness sharpExtra;
 
 		public MeleeWeapon (bool tmp, int baseatk, int elematk, Sharpness sharp, int affinity) : base (tmp, baseatk, affinity)
 		{
@@ -37,7 +37,7 @@ namespace JhooApp
 			return element;
 		}
 
-		public int setElematk (int elematk)
+		public void setElematk (int elematk)
 		{
 			if (elematk >= 0)
 				this.elematk = elematk;

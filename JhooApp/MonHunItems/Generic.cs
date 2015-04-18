@@ -7,12 +7,12 @@ namespace JhooApp
 		private static int count;
 		private bool tmp;
 		private readonly int id;
-		private string name;
-		private int rarity;
-		private int buyValue;
-		private int sellValue;
-		private string desc;
-		private string icon;
+		protected string name;
+		protected int rarity;
+		protected int buyValue;
+		protected int sellValue;
+		protected string desc;
+		protected string icon;
 
 		public Generic (bool tmp)
 		{
@@ -46,7 +46,7 @@ namespace JhooApp
 
 		public void setRarity(int rarity)
 		{
-			if (1<=rarity<=10)
+			if (1 <= rarity && rarity <= 10)
 				this.rarity = rarity;
 		}
 

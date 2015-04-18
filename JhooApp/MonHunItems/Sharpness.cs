@@ -28,7 +28,7 @@ namespace JhooApp
 
 		public static float atkMult (SharpTypes sharp, int baseatk)
 		{
-			float attack;
+			float attack = 0;
 			switch (sharp) {
 			case SharpTypes.Red:
 				attack = baseatk * 0.5f;
@@ -55,9 +55,9 @@ namespace JhooApp
 			return attack;
 		}
 
-		public static float atkMult (SharpTypes sharp, int elmatk)
+		public static float elmMult (SharpTypes sharp, int elmatk)
 		{
-			float eattack;
+			float eattack = 0;
 			switch (sharp) {
 			case SharpTypes.Red:
 				eattack = elmatk * 0.25f;
