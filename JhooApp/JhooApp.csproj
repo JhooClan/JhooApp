@@ -54,6 +54,17 @@
     <Compile Include="LocationsActivity.cs" />
     <Compile Include="SkillsActivity.cs" />
     <Compile Include="UtilsActivity.cs" />
+    <Compile Include="MonHunItems\CraftObject.cs" />
+    <Compile Include="MonHunItems\Elem.cs" />
+    <Compile Include="MonHunItems\EquipmentItem.cs" />
+    <Compile Include="MonHunItems\Generic.cs" />
+    <Compile Include="MonHunItems\MeleeWeapon.cs" />
+    <Compile Include="MonHunItems\RangedWeapon.cs" />
+    <Compile Include="MonHunItems\Sharpness.cs" />
+    <Compile Include="MonHunItems\SharpTypes.cs" />
+    <Compile Include="MonHunItems\Weapon.cs" />
+    <Compile Include="MonHunItems\WeapType.cs" />
+    <Compile Include="MonHunItems\Weapon\GreatSword.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -81,5 +92,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\drawable-ldpi\" />
+    <Folder Include="MonHunItems\" />
+    <Folder Include="MonHunItems\Weapon\" />
   </ItemGroup>
 </Project>
