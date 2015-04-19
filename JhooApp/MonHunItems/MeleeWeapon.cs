@@ -69,6 +69,41 @@ namespace JhooApp
 		{
 			return sharpExtra;
 		}
+
+		public override double power()
+		{
+			return baseatk/mult;
+		}
+
+		public override double effectivePower()
+		{
+			float aMult;
+			if (affinity >= 0)
+				aMult = 1.25f;
+			else
+				aMult = 0.75f;
+			return ((power() * aMult) * Math.Abs(affinity) + power() * (100 - Math.Abs(affinity))) / 100;
+		}
+
+		public override float elementalPower()
+		{
+			return elematk / 10;
+		}
+
+		public override double sharpPower(SharpTypes maxSharp)
+		{
+			return power()*Sharpness.atkMult(maxSharp);
+		}
+
+		public override double sharpEffectivePower(SharpTypes maxSharp)
+		{
+			return effectivePower()*Sharpness.atkMult(maxSharp);
+		}
+
+		public override float sharpElementalPower(SharpTypes maxSharp)
+		{
+			return elementalPower()*Sharpness.elmMult(maxSharp);
+		}
 	}
 }
 

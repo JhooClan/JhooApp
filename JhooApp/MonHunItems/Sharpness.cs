@@ -26,59 +26,95 @@ namespace JhooApp
 			}
 		}
 
-		public static float atkMult (SharpTypes sharp, int baseatk)
+		public static SharpTypes stringToSharpType(string strong)
+		{
+			SharpTypes shar = SharpTypes.Red;
+			switch (strong) {
+			case "Rojo":
+			case "Red":
+				shar = SharpTypes.Red;
+				break;
+			case "Naranja":
+			case "Orange":
+				shar = SharpTypes.Orange;
+				break;
+			case "Amarillo":
+			case "Yellow":
+				shar = SharpTypes.Yellow;
+				break;
+			case "Verde":
+			case "Green":
+				shar = SharpTypes.Green;
+				break;
+			case "Azul":
+			case "Blue":
+				shar = SharpTypes.Blue;
+				break;
+			case "Blanco":
+			case "White":
+				shar = SharpTypes.White;
+				break;
+			case "Morado":
+			case "Purple":
+				shar = SharpTypes.Purple;
+				break;
+			}
+			return shar;
+		}
+
+		public static float atkMult (SharpTypes sharp)
 		{
 			float attack = 0;
 			switch (sharp) {
 			case SharpTypes.Red:
-				attack = baseatk * 0.5f;
+				attack = 0.50f;
 				break;
 			case SharpTypes.Orange:
-				attack = baseatk * 0.75f;
+				attack = 0.75f;
 				break;
 			case SharpTypes.Yellow:
-				attack = (float)baseatk;
+				attack = 1.00f;
 				break;
 			case SharpTypes.Green:
-				attack = baseatk * 1.05f;
+				attack = 1.05f;
 				break;
 			case SharpTypes.Blue:
-				attack = baseatk * 1.2f;
+				attack = 1.20f;
 				break;
 			case SharpTypes.White:
-				attack = baseatk * 1.32f;
+				attack = 1.32f;
 				break;
 			case SharpTypes.Purple:
-				attack = baseatk * 1.45f;
+				attack = 1.45f;
 				break;
 			}
 			return attack;
 		}
 
-		public static float elmMult (SharpTypes sharp, int elmatk)
+		public static float elmMult (SharpTypes sharp)
 		{
 			float eattack = 0;
 			switch (sharp) {
 			case SharpTypes.Red:
-				eattack = elmatk * 0.25f;
+				eattack = 0.25f;
 				break;
 			case SharpTypes.Orange:
-				eattack = elmatk * 0.50f;
+				eattack = 0.50f;
 				break;
 			case SharpTypes.Yellow:
-				eattack = elmatk * 0.75f;
+				eattack = 0.75f;
 				break;
 			case SharpTypes.Green:
-				eattack = (float)elmatk;
+				eattack = 1.00f;
 				break;
 			case SharpTypes.Blue:
-				eattack = elmatk * 1.0625f;
+				eattack = 1.0625f;
 				break;
 			case SharpTypes.White:
-				eattack = elmatk * 1.125f;
+				eattack = 1.125f;
 				break;
 			case SharpTypes.Purple:
-				eattack = elmatk * 1.2f;
+				eattack = 1.2f;
 				break;
 			}
 			return eattack;

@@ -25,4 +25,13 @@
         <item>Ballesta pesada</item>
         <item>Arco</item>
     </string-array>
+    <string-array name="sharpTypes_array">
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Blanco</item>
+        <item>Morado</item>
+    </string-array>
 </resources>

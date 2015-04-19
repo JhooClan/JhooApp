@@ -58,6 +58,36 @@ namespace JhooApp
 		{
 			return mult;
 		}
+
+		public virtual double power()
+		{
+			return 0;
+		}
+
+		public virtual double effectivePower()
+		{
+			return 0;
+		}
+
+		public virtual float elementalPower()
+		{
+			return 0;
+		}
+
+		public virtual double sharpPower(SharpTypes maxSharp)
+		{
+			return 0;
+		}
+
+		public virtual double sharpEffectivePower(SharpTypes maxSharp)
+		{
+			return 0;
+		}
+
+		public virtual float sharpElementalPower(SharpTypes maxSharp)
+		{
+			return 0;
+		}
 	}
 }
 

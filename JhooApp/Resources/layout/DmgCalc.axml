@@ -92,7 +92,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/textView1" />
             <EditText
-                android:inputType="number"
+                android:inputType="numberSigned"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -114,10 +114,11 @@
             android:layout_height="match_parent"
             android:id="@+id/textView1" />
         <EditText
-            android:inputType="number"
+            android:inputType="numberSigned"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
+            android:enabled="false"
             android:id="@+id/chaos" />
     </LinearLayout>
     <LinearLayout
@@ -128,50 +129,16 @@
         android:layout_height="wrap_content"
         android:gravity="fill_horizontal"
         android:id="@+id/linearLayout7">
-        <CheckBox
-            android:text="Rojo"
+        <TextView
+            android:text=" Afilado máximo: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/redSharp" />
-        <CheckBox
-            android:text="Naranja"
+            android:id="@+id/textView2" />
+        <Spinner
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/orangeSharp" />
-        <CheckBox
-            android:text="Amarillo"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/yellowSharp" />
-        <CheckBox
-            android:text="Verde"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/greenSharp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="fill_horizontal"
-        android:id="@+id/linearLayout8">
-        <CheckBox
-            android:text="Azul"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/blueSharp" />
-        <CheckBox
-            android:text="Blanco"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/whiteSharp" />
-        <CheckBox
-            android:text="Morado"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/purpleSharp" />
+            android:id="@+id/sharpSelect" />
         <Button
             android:text="¡Crear!"
             android:layout_width="wrap_content"
