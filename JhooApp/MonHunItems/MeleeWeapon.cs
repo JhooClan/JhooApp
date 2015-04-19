@@ -10,11 +10,13 @@ namespace JhooApp
 		protected int elematk;
 		protected Sharpness sharp;
 		protected Sharpness sharpExtra;
+		protected int chaos;
 
-		public MeleeWeapon (bool tmp, int baseatk, int elematk, Sharpness sharp, int affinity) : base (tmp, baseatk, affinity)
+		public MeleeWeapon (bool tmp, int baseatk, int elematk, Sharpness sharp, int affinity, int chaos) : base (tmp, baseatk, affinity)
 		{
 			this.elematk = elematk;
 			this.sharp = sharp;
+			this.chaos = chaos;
 		}
 
 		public void setElmIsHidden (bool elmIsHidden)
@@ -70,6 +72,19 @@ namespace JhooApp
 			return sharpExtra;
 		}
 
+		public void setChaos(int chaos)
+		{
+			if (-100 <= chaos && chaos <= 100)
+				this.chaos = chaos;
+			else
+				throw new ArgumentException("Parameter must be between -100 and 100", "chaos");
+		}
+
+		public int getChaos()
+		{
+			return chaos;
+		}
+
 		public override double power()
 		{
 			return baseatk/mult;
@@ -77,12 +92,19 @@ namespace JhooApp
 
 		public override double effectivePower()
 		{
-			float aMult;
+			float aMult, cMult;
+
 			if (affinity >= 0)
 				aMult = 1.25f;
 			else
 				aMult = 0.75f;
-			return ((power() * aMult) * Math.Abs(affinity) + power() * (100 - Math.Abs(affinity))) / 100;
+
+			if (chaos >= 0)
+				cMult = 1.25f;
+			else
+				cMult = 0.75f;
+
+			return ((power() * aMult) * Math.Abs(affinity) + (power() * cMult) * Math.Abs(chaos) + power() * (100 - Math.Abs(affinity - Math.Abs(chaos)))) / 100;
 		}
 
 		public override float elementalPower()

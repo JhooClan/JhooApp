@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -67,8 +67,32 @@
     <Compile Include="MonHunItems\Weapon\GreatSword.cs" />
     <Compile Include="MonHunItems\Weapon\MotionValues\GreatSwordMotionValues.cs" />
     <Compile Include="MonHunItems\Weapon\MotionValues\LongSwordMotionValues.cs" />
-    <Compile Include="MonHunItems\Weapon\LongSword.cs" />
     <Compile Include="DmcCalcActivity.cs" />
+    <Compile Include="MonHunItems\Weapon\SwordnShield.cs" />
+    <Compile Include="MonHunItems\Weapon\DualBlades.cs" />
+    <Compile Include="MonHunItems\Weapon\Hammer.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\SwordnShieldMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\DualBladesMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\HammerMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\HuntingHornMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\HuntingHorn.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\LanceMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\Lance.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\SwitchAxeMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\SwitchAxe.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\InsectGlaiveMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\InsectGlaive.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\GunlanceMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\LongSword.cs" />
+    <Compile Include="MonHunItems\Weapon\Gunlance.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\ChargeBladeMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\LightBowgunMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\ChargeBlade.cs" />
+    <Compile Include="MonHunItems\Weapon\LightBowgun.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\HeavyBowgunMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\MotionValues\BowMotionValues.cs" />
+    <Compile Include="MonHunItems\Weapon\HeavyBowgun.cs" />
+    <Compile Include="MonHunItems\Weapon\Bow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

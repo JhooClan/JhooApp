@@ -69,40 +69,46 @@ namespace JhooApp
 			Weapon weap = null;
 			switch (wType) {
 			case "Gran espada":
-				weap=new GreatSword(true, atk, elem, sh, aff, affc);
+				weap = new GreatSword (true, atk, elem, sh, aff, affc);
 				break;
-//			case "Espada larga":
-//				wMult = 3.3f;
-//				break;
-//			case "Espada y escudo":
-//			case "Espadas dobles":
-//				wMult = 1.4f;
-//				break;
-//			case "Martillo":
-//			case "Cornamusa":
-//				wMult = 5.2f;
-//				break;
-//			case "Lanza":
-//			case "Lanza pistola":
-//				wMult = 2.3f;
-//				break;
-//			case "Hacha espada":
-//				wMult = 5.4f;
-//				break;
-//			case "Hacha cargada":
-//				wMult = 3.6f;
-//				break;
-//			case "Glaive insecto":
-//				wMult = 3.1f;
-//				break;
+			case "Espada larga":
+				weap = new LongSword (true, atk, elem, sh, aff, affc);
+				break;
+			case "Espada y escudo":
+				weap = new SwordnShield (true, atk, elem, sh, aff, affc);
+				break;
+			case "Espadas dobles":
+				weap=new DualBlades(true, atk, elem, sh, aff, affc);
+				break;
+			case "Martillo":
+				weap = new Hammer (true, atk, elem, sh, aff, affc);
+				break;
+			case "Cornamusa":
+				weap = new HuntingHorn (true, atk, elem, sh, aff, affc);
+				break;
+			case "Lanza":
+				weap = new Lance (true, atk, elem, sh, aff, affc);
+				break;
+			case "Lanza pistola":
+				weap = new Gunlance (true, atk, elem, sh, aff, affc);
+				break;
+			case "Hacha espada":
+				weap = new SwitchAxe (true, atk, elem, sh, aff, affc);
+				break;
+			case "Hacha cargada":
+				weap = new ChargeBlade (true, atk, elem, sh, aff, affc);
+				break;
+			case "Glaive insecto":
+				weap = new InsectGlaive (true, atk, elem, sh, aff, affc);
+				break;
 //			case "Ballesta ligera":
-//				wMult = 1.3f;
+//				weap = new LightBowgun (true, atk, aff);
 //				break;
 //			case "Ballesta pesada":
-//				wMult = 1.5f;
+//				weap = new HeavyBowgun (true, atk, aff);
 //				break;
 //			case "Arco":
-//				wMult = 1.2f;
+//				weap = new Bow (true, atk, aff);
 //				break;
 			}
 

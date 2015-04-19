@@ -4,6 +4,7 @@ namespace JhooApp
 {
 	public class Weapon : EquipmentItem
 	{
+		protected string[] wType;
 		protected int baseatk;
 		protected int affinity;
 		protected float mult;

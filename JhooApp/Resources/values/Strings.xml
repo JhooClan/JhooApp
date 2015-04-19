@@ -21,9 +21,9 @@
         <item>Hacha espada</item>
         <item>Hacha cargada</item>
         <item>Glaive insecto</item>
-        <item>Ballesta ligera</item>
+<!--        <item>Ballesta ligera</item>
         <item>Ballesta pesada</item>
-        <item>Arco</item>
+        <item>Arco</item>-->
     </string-array>
     <string-array name="sharpTypes_array">
         <item>Rojo</item>
