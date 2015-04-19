@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,22 +9,203 @@
     android:gravity="top"
     android:background="@drawable/backgr">
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:minWidth="25px"
-        android:minHeight="250px"
+        android:minHeight="25px"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="clip_vertical"
+        android:gravity="fill_horizontal"
         android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="  Tipo de arma "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wType" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical"
+            android:id="@+id/linearLayout3">
+            <TextView
+                android:text="  Ataque"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/baseattack" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical"
+            android:id="@+id/linearLayout4">
+            <TextView
+                android:text="  A. elem."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/elemattack" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical"
+            android:id="@+id/linearLayout5">
+            <TextView
+                android:text="  Afinidad"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/affinity" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_vertical"
+        android:id="@+id/linearLayout6">
         <TextView
-            android:text="Tipo de arma"
+            android:text="  Af. caos"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/textView1" />
-        <Spinner
-            android:layout_width="wrap_content"
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/wType" />
+            android:text="0"
+            android:id="@+id/chaos" />
     </LinearLayout>
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:id="@+id/linearLayout7">
+        <CheckBox
+            android:text="Rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/redSharp" />
+        <CheckBox
+            android:text="Naranja"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/orangeSharp" />
+        <CheckBox
+            android:text="Amarillo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/yellowSharp" />
+        <CheckBox
+            android:text="Verde"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/greenSharp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:id="@+id/linearLayout8">
+        <CheckBox
+            android:text="Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/blueSharp" />
+        <CheckBox
+            android:text="Blanco"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/whiteSharp" />
+        <CheckBox
+            android:text="Morado"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/purpleSharp" />
+        <Button
+            android:text="¡Crear!"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/start" />
+    </LinearLayout>
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wPower" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wEfPow" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wElem" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wEfPowS" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wElemS" />
+</LinearLayout>
