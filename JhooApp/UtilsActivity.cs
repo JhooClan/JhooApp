@@ -10,10 +10,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Content.PM;
 
 namespace JhooApp
 {
-	[Activity (Label = "UtilsActivity")]			
+	[Activity (Label = "UtilsActivity", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class UtilsActivity : Activity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)

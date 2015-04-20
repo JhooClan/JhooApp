@@ -6,10 +6,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content.PM;
 
 namespace JhooApp
 {
-	[Activity (Label = "JhooApp", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "JhooApp", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = ScreenOrientation.Portrait)]
 	public class MainActivity : Activity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)
