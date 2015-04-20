@@ -37,12 +37,7 @@
                 android:id="@+id/wType" />
         </LinearLayout>
         <CheckBox
-            android:text="Doble afin."
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/cbDoubleAff" />
-        <CheckBox
-            android:text="Doble elem."
+            android:text="Doble elemento"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:enabled="false"
@@ -87,7 +82,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout4">
             <TextView
-                android:text="   A. elem.   "
+                android:text="   Elemento   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -108,7 +103,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout10">
             <TextView
-                android:text="   Elem. 2   "
+                android:text="   Elemento 2   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -121,6 +116,16 @@
                 android:enabled="false"
                 android:id="@+id/elemattack2" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="fill_horizontal"
+        android:id="@+id/linearLayout14">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -164,6 +169,11 @@
                 android:enabled="false"
                 android:id="@+id/chaos" />
         </LinearLayout>
+        <CheckBox
+            android:text="Doble afinidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cbDoubleAff" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

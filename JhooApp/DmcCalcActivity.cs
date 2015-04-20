@@ -137,11 +137,8 @@ namespace JhooApp
 		public string spinner_ItemSelected (Object sender, AdapterView.ItemSelectedEventArgs e)
 		{
 			Spinner spinner = (Spinner)sender;
-			CheckBox cbDualElement = FindViewById<CheckBox> (Resource.Id.elemattack2);
-			if (string.Format ("{0}", spinner.GetItemAtPosition (e.Position)) == "Espadas dobles")
-				cbDualElement.Enabled = true;
-			else
-				cbDualElement.Enabled = false;
+			CheckBox cbDualElement = FindViewById<CheckBox> (Resource.Id.cbDoubleElem);
+			cbDualElement.Enabled = (string)spinner.GetItemAtPosition (e.Position) == "Espadas dobles";
 			return string.Format ("{0}", spinner.GetItemAtPosition (e.Position));
 		}
 

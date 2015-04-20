@@ -88,74 +88,77 @@ namespace JhooApp
 			// aapt resource value: 0x7f06000f
 			public const int affinity = 2131099663;
 			
-			// aapt resource value: 0x7f060009
-			public const int baseattack = 2131099657;
-			
-			// aapt resource value: 0x7f060026
-			public const int button2 = 2131099686;
+			// aapt resource value: 0x7f060008
+			public const int baseattack = 2131099656;
 			
 			// aapt resource value: 0x7f060027
-			public const int button3 = 2131099687;
+			public const int button2 = 2131099687;
 			
-			// aapt resource value: 0x7f060025
-			public const int buttonCalc = 2131099685;
+			// aapt resource value: 0x7f060028
+			public const int button3 = 2131099688;
 			
-			// aapt resource value: 0x7f060022
-			public const int buttonEquipment = 2131099682;
-			
-			// aapt resource value: 0x7f06001f
-			public const int buttonItems = 2131099679;
-			
-			// aapt resource value: 0x7f060020
-			public const int buttonLocations = 2131099680;
-			
-			// aapt resource value: 0x7f06001d
-			public const int buttonMonsters = 2131099677;
-			
-			// aapt resource value: 0x7f06001e
-			public const int buttonQuests = 2131099678;
+			// aapt resource value: 0x7f060026
+			public const int buttonCalc = 2131099686;
 			
 			// aapt resource value: 0x7f060023
-			public const int buttonSkills = 2131099683;
+			public const int buttonEquipment = 2131099683;
+			
+			// aapt resource value: 0x7f060020
+			public const int buttonItems = 2131099680;
+			
+			// aapt resource value: 0x7f060021
+			public const int buttonLocations = 2131099681;
+			
+			// aapt resource value: 0x7f06001e
+			public const int buttonMonsters = 2131099678;
+			
+			// aapt resource value: 0x7f06001f
+			public const int buttonQuests = 2131099679;
 			
 			// aapt resource value: 0x7f060024
-			public const int buttonUtils = 2131099684;
+			public const int buttonSkills = 2131099684;
+			
+			// aapt resource value: 0x7f060025
+			public const int buttonUtils = 2131099685;
+			
+			// aapt resource value: 0x7f060012
+			public const int cbDoubleAff = 2131099666;
 			
 			// aapt resource value: 0x7f060005
-			public const int cbDoubleAff = 2131099653;
-			
-			// aapt resource value: 0x7f060006
-			public const int cbDoubleElem = 2131099654;
+			public const int cbDoubleElem = 2131099653;
 			
 			// aapt resource value: 0x7f060011
 			public const int chaos = 2131099665;
 			
-			// aapt resource value: 0x7f06000b
-			public const int elemattack = 2131099659;
+			// aapt resource value: 0x7f06000a
+			public const int elemattack = 2131099658;
 			
-			// aapt resource value: 0x7f06000d
-			public const int elemattack2 = 2131099661;
+			// aapt resource value: 0x7f06000c
+			public const int elemattack2 = 2131099660;
 			
 			// aapt resource value: 0x7f060001
 			public const int linearLayout1 = 2131099649;
 			
-			// aapt resource value: 0x7f06000c
-			public const int linearLayout10 = 2131099660;
+			// aapt resource value: 0x7f06000b
+			public const int linearLayout10 = 2131099659;
 			
-			// aapt resource value: 0x7f060012
-			public const int linearLayout11 = 2131099666;
+			// aapt resource value: 0x7f060013
+			public const int linearLayout11 = 2131099667;
 			
-			// aapt resource value: 0x7f060016
-			public const int linearLayout13 = 2131099670;
+			// aapt resource value: 0x7f060017
+			public const int linearLayout13 = 2131099671;
+			
+			// aapt resource value: 0x7f06000d
+			public const int linearLayout14 = 2131099661;
 			
 			// aapt resource value: 0x7f060002
 			public const int linearLayout2 = 2131099650;
 			
-			// aapt resource value: 0x7f060021
-			public const int linearLayout3 = 2131099681;
+			// aapt resource value: 0x7f060022
+			public const int linearLayout3 = 2131099682;
 			
-			// aapt resource value: 0x7f06000a
-			public const int linearLayout4 = 2131099658;
+			// aapt resource value: 0x7f060009
+			public const int linearLayout4 = 2131099657;
 			
 			// aapt resource value: 0x7f06000e
 			public const int linearLayout5 = 2131099662;
@@ -163,41 +166,41 @@ namespace JhooApp
 			// aapt resource value: 0x7f060010
 			public const int linearLayout6 = 2131099664;
 			
-			// aapt resource value: 0x7f060013
-			public const int linearLayout7 = 2131099667;
+			// aapt resource value: 0x7f060014
+			public const int linearLayout7 = 2131099668;
+			
+			// aapt resource value: 0x7f060006
+			public const int linearLayout8 = 2131099654;
 			
 			// aapt resource value: 0x7f060007
-			public const int linearLayout8 = 2131099655;
+			public const int linearLayout9 = 2131099655;
 			
-			// aapt resource value: 0x7f060008
-			public const int linearLayout9 = 2131099656;
+			// aapt resource value: 0x7f060016
+			public const int sharpSelect = 2131099670;
 			
-			// aapt resource value: 0x7f060015
-			public const int sharpSelect = 2131099669;
-			
-			// aapt resource value: 0x7f060017
-			public const int start = 2131099671;
+			// aapt resource value: 0x7f060018
+			public const int start = 2131099672;
 			
 			// aapt resource value: 0x7f060003
 			public const int textView1 = 2131099651;
 			
-			// aapt resource value: 0x7f060014
-			public const int textView2 = 2131099668;
-			
-			// aapt resource value: 0x7f060019
-			public const int wEfPow = 2131099673;
-			
-			// aapt resource value: 0x7f06001b
-			public const int wEfPowS = 2131099675;
+			// aapt resource value: 0x7f060015
+			public const int textView2 = 2131099669;
 			
 			// aapt resource value: 0x7f06001a
-			public const int wElem = 2131099674;
+			public const int wEfPow = 2131099674;
 			
 			// aapt resource value: 0x7f06001c
-			public const int wElemS = 2131099676;
+			public const int wEfPowS = 2131099676;
 			
-			// aapt resource value: 0x7f060018
-			public const int wPower = 2131099672;
+			// aapt resource value: 0x7f06001b
+			public const int wElem = 2131099675;
+			
+			// aapt resource value: 0x7f06001d
+			public const int wElemS = 2131099677;
+			
+			// aapt resource value: 0x7f060019
+			public const int wPower = 2131099673;
 			
 			// aapt resource value: 0x7f060004
 			public const int wType = 2131099652;
