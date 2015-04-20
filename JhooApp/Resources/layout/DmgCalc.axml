@@ -7,7 +7,7 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:gravity="top"
-    android:background="@drawable/backgr">
+    android:background="">
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -25,7 +25,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout2">
             <TextView
-                android:text="  Tipo de arma "
+                android:text="   Tipo de arma   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -44,7 +44,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout3">
             <TextView
-                android:text="  Ataque"
+                android:text="   Ataque   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -65,7 +65,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout4">
             <TextView
-                android:text="  A. elem."
+                android:text="   A. elem.   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -77,6 +77,15 @@
                 android:text="0"
                 android:id="@+id/elemattack" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:id="@+id/linearLayout1">
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -86,7 +95,7 @@
             android:gravity="clip_vertical"
             android:id="@+id/linearLayout5">
             <TextView
-                android:text="  Afinidad"
+                android:text="   Afinidad   "
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -98,52 +107,52 @@
                 android:text="0"
                 android:id="@+id/affinity" />
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="clip_vertical"
-        android:id="@+id/linearLayout6">
-        <TextView
-            android:text="  Af. caos"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView1" />
-        <EditText
-            android:inputType="numberSigned"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:enabled="false"
-            android:id="@+id/chaos" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="fill_horizontal"
-        android:id="@+id/linearLayout7">
-        <TextView
-            android:text=" Afilado máximo: "
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/textView2" />
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/sharpSelect" />
-        <Button
-            android:text="¡Crear!"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/start" />
+            android:gravity="clip_vertical"
+            android:id="@+id/linearLayout6">
+            <TextView
+                android:text="   Af. caos   "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1" />
+            <EditText
+                android:inputType="numberSigned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:enabled="false"
+                android:id="@+id/chaos" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:id="@+id/linearLayout7">
+            <TextView
+                android:text=" Afilado máximo: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/sharpSelect" />
+            <Button
+                android:text="¡Crear!"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/start" />
+        </LinearLayout>
     </LinearLayout>
     <TextView
         android:text=""

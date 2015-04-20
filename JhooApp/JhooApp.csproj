@@ -12,9 +12,9 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>JhooApp</AssemblyName>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -108,7 +108,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Utils.axml" />
-    <AndroidResource Include="Resources\drawable-hdpi\backgr.jpg" />
     <AndroidResource Include="Resources\drawable-ldpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Equipment.axml" />
     <AndroidResource Include="Resources\layout\Quests.axml" />
@@ -117,6 +116,7 @@
     <AndroidResource Include="Resources\layout\Locations.axml" />
     <AndroidResource Include="Resources\layout\Skills.axml" />
     <AndroidResource Include="Resources\layout\DmgCalc.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\backgr.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
