@@ -25,6 +25,8 @@ namespace JhooApp
 			Spinner sWeapType = FindViewById<Spinner> (Resource.Id.wType);
 			Spinner sSharpType = FindViewById<Spinner> (Resource.Id.sharpSelect);
 			Button createWeapon = FindViewById<Button> (Resource.Id.start);
+			CheckBox cbDualElem = FindViewById<CheckBox> (Resource.Id.cbDoubleElem);
+			CheckBox cbDualAff = FindViewById<CheckBox> (Resource.Id.cbDoubleAff);
 
 			var adapter = ArrayAdapter.CreateFromResource (
 				this, Resource.Array.weapons_array, Android.Resource.Layout.SimpleSpinnerItem);
@@ -41,11 +43,26 @@ namespace JhooApp
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
 			sSharpType.Adapter = adapter;
 
-
+			cbDualAff.CheckedChange += new EventHandler<CompoundButton.CheckedChangeEventArgs> (dualAff_check);
+			cbDualElem.CheckedChange += new EventHandler<CompoundButton.CheckedChangeEventArgs> (dualElem_check);
 
 			createWeapon.Click += delegate {
 				calculateFunc(weaponType, sharpType);
 			};
+		}
+
+		public void dualAff_check (object sender, CompoundButton.CheckedChangeEventArgs e)
+		{
+			EditText chaos = FindViewById<EditText> (Resource.Id.chaos);
+			CheckBox cbDualAff = (CheckBox)sender;
+			chaos.Enabled = cbDualAff.Checked;
+		}
+
+		public void dualElem_check (object sender, CompoundButton.CheckedChangeEventArgs e)
+		{
+			EditText secElem = FindViewById<EditText> (Resource.Id.elemattack2);
+			CheckBox cbDualElem = (CheckBox)sender;
+			secElem.Enabled = cbDualElem.Checked;
 		}
 
 		public void calculateFunc(string wType, SharpTypes sharp)
@@ -122,6 +139,11 @@ namespace JhooApp
 		public string spinner_ItemSelected (Object sender, AdapterView.ItemSelectedEventArgs e)
 		{
 			Spinner spinner = (Spinner)sender;
+			CheckBox cbDualElement = FindViewById<CheckBox> (Resource.Id.elemattack2);
+			if (string.Format ("{0}", spinner.GetItemAtPosition (e.Position)) == "Espadas dobles")
+				cbDualElement.Enabled = true;
+			else
+				cbDualElement.Enabled = false;
 			return string.Format ("{0}", spinner.GetItemAtPosition (e.Position));
 		}
 
