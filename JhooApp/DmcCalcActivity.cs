@@ -27,6 +27,8 @@ namespace JhooApp
 			Button createWeapon = FindViewById<Button> (Resource.Id.start);
 			CheckBox cbDualElem = FindViewById<CheckBox> (Resource.Id.cbDoubleElem);
 			CheckBox cbDualAff = FindViewById<CheckBox> (Resource.Id.cbDoubleAff);
+			EditText chaos = FindViewById<EditText> (Resource.Id.chaos);
+			EditText dualElem = FindViewById<EditText> (Resource.Id.elemattack2);
 
 			var adapter = ArrayAdapter.CreateFromResource (
 				this, Resource.Array.weapons_array, Android.Resource.Layout.SimpleSpinnerItem);
@@ -43,26 +45,22 @@ namespace JhooApp
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
 			sSharpType.Adapter = adapter;
 
-			cbDualAff.CheckedChange += new EventHandler<CompoundButton.CheckedChangeEventArgs> (dualAff_check);
-			cbDualElem.CheckedChange += new EventHandler<CompoundButton.CheckedChangeEventArgs> (dualElem_check);
+			cbDualAff.Click += (o, e) => {
+				if (cbDualAff.Checked)
+					chaos.Enabled = true;
+				else
+					chaos.Enabled = false;
+			};
+			cbDualElem.Click += (o, e) => {
+				if (cbDualElem.Checked)
+					dualElem.Enabled = true;
+				else
+					dualElem.Enabled = false;
+			};
 
 			createWeapon.Click += delegate {
 				calculateFunc(weaponType, sharpType);
 			};
-		}
-
-		public void dualAff_check (object sender, CompoundButton.CheckedChangeEventArgs e)
-		{
-			EditText chaos = FindViewById<EditText> (Resource.Id.chaos);
-			CheckBox cbDualAff = (CheckBox)sender;
-			chaos.Enabled = cbDualAff.Checked;
-		}
-
-		public void dualElem_check (object sender, CompoundButton.CheckedChangeEventArgs e)
-		{
-			EditText secElem = FindViewById<EditText> (Resource.Id.elemattack2);
-			CheckBox cbDualElem = (CheckBox)sender;
-			secElem.Enabled = cbDualElem.Checked;
 		}
 
 		public void calculateFunc(string wType, SharpTypes sharp)
