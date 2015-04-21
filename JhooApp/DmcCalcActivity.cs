@@ -49,14 +49,18 @@ namespace JhooApp
 			cbDualAff.Click += (o, e) => {
 				if (cbDualAff.Checked)
 					chaos.Enabled = true;
-				else
+				else {
 					chaos.Enabled = false;
+					chaos.Text = "0";
+				}
 			};
 			cbDualElem.Click += (o, e) => {
 				if (cbDualElem.Checked)
 					dualElem.Enabled = true;
-				else
+				else {
 					dualElem.Enabled = false;
+					dualElem.Text = "0";
+				}
 			};
 
 			createWeapon.Click += delegate {
@@ -76,10 +80,22 @@ namespace JhooApp
 			TextView wEfPowS = FindViewById<TextView> (Resource.Id.wEfPowS);
 			TextView wElemS = FindViewById<TextView> (Resource.Id.wElemS);
 
-			int atk = int.Parse (baseAttack.Text);
-			int elem = int.Parse (elemAttack.Text);
-			int aff = int.Parse (affinity.Text);
-			int affc = int.Parse (chaos.Text);
+			int atk, elem, aff, affc;
+			if (baseAttack.Text == String.Empty)
+				baseAttack.Text = "0";
+			atk = int.Parse (baseAttack.Text);
+
+			if (elemAttack.Text == String.Empty)
+				elemAttack.Text = "0";
+			elem = int.Parse (elemAttack.Text);
+
+			if (affinity.Text == String.Empty)
+				affinity.Text = "0";
+			aff = int.Parse (affinity.Text);
+
+			if (chaos.Text == String.Empty)
+				chaos.Text = "0";
+			affc = int.Parse (chaos.Text);
 
 			Sharpness sh = new Sharpness (14, 14, 14, 14, 14, 14, 14);
 			Weapon weap = null;
@@ -139,7 +155,8 @@ namespace JhooApp
 		{
 			Spinner spinner = (Spinner)sender;
 			CheckBox cbDualElement = FindViewById<CheckBox> (Resource.Id.cbDoubleElem);
-			cbDualElement.Enabled = (string)spinner.GetItemAtPosition (e.Position) == "Espadas dobles";
+			if ((string)spinner.GetItemAtPosition (0) == "Gran espada")
+				cbDualElement.Enabled = (string)spinner.GetItemAtPosition (e.Position) == "Espadas dobles";
 			return string.Format ("{0}", spinner.GetItemAtPosition (e.Position));
 		}
 
